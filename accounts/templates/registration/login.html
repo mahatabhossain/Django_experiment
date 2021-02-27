@@ -1,0 +1,47 @@
+{% extends '../base.html'%}
+
+{% block content %}
+
+
+<h2> Login your account</h2>
+<form method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" value="Login">
+</form>
+
+   
+  <!----------Container------------------->
+  <!-- <div class="container-fluid"> -->
+  <!------------------Login------------->
+  <!-- <h2>Login Your Account</h2>
+  <form class="mt-3">
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-1 col-form-label">Email</label>
+      <div class="col-3">
+        <input type="email" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-1 col-form-label">Password</label>
+      <div class="col-3">
+        <input type="password" class="form-control" id="inputPassword3">
+      </div>
+    </div>
+  
+    
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1">
+          <label class="form-check-label" for="gridCheck1">
+            Remember me
+          </label>
+        </div>
+      </div>
+
+
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+</div>
+</div> -->
+{% endblock %}
