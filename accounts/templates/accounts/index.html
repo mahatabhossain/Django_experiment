@@ -11,8 +11,8 @@
 <body> -->
     {% block content %}
 
-    <!-- <h1> Welcome {{user}} </h1> -->
-    <h1> Welcome to Home page </h1>
+    <h1> Welcome {{user}} </h1>
+    <!-- <h1> Welcome to Home page </h1> -->
     
         {% if user.is_authenticated %}
             <a href="{% url 'loged_out' % }">Logout</a>
