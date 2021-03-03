@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#Static files path
+STATICFILES_DIRS = [
+    "/Django_experiment/accounts/static",
+]
+
 
 # Application definition
 
